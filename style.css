@@ -13,10 +13,8 @@
   --four-color: hsla(312, 91%, 96%, 1);
   --six-color: hsla(233, 100%, 97%, 1);
   --seven-color: hsla(274, 84%, 12%, 1);
-
   font-size: 62.5%;
 }
-
 body {
   width: 384px;
   margin: 0 auto;
