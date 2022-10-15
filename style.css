@@ -43,6 +43,8 @@ header {
 
 header p {
   display: none;
+  font-family:'Palanquin', sans-serif; 
+  animation: cardDown 1s 600ms backwards;
 }
 
 header img {
@@ -174,7 +176,6 @@ footer {
 
     margin: 3.2rem auto 0;
     /* or 83% */
-    
   }
 
   .cards {
@@ -226,7 +227,7 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .cards {
     grid-template-areas:
       'A B C'
