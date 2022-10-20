@@ -92,9 +92,8 @@ main p {
 .card {
   animation: cardTop 1s;
   position: relative;
-  border: 1px solid red;
-  cursor: pointer;
   transition: all 300ms ease-in-out;
+  cursor: pointer;
 }
 .card:hover {
   transform: scale(1.1);
