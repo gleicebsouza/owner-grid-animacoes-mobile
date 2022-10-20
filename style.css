@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   font-size: 62.5%;
 
@@ -16,13 +21,6 @@
   --ff-second: 'Palanquin', sans-serif;
   --ff-third: 'Roboto', sans-serif;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .page {
   min-width: 38.4rem;
   margin: 0 auto;
@@ -34,22 +32,26 @@ body {
   background-color: var(--bg-color-primary);
   font-family: var(--ff-primary);
 }
-
 header {
   height: 27.9rem;
   text-align: center;
   background-color: var(--bg-color-secondy);
 }
-
 header p {
   display: none;
-  font-family:'Palanquin', sans-serif; 
-  animation: cardDown 1s 600ms backwards;
+  font-family: 'Palanquin', sans-serif;
+  animation: cardDown 1s 400ms backwards;
 }
 
 header img {
   margin-top: 3rem;
   margin-bottom: 1rem;
+  transition: all 300ms ease-in;
+}
+header img:hover {
+  animation: pisca 2s ease-in;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 header h1 {
@@ -62,6 +64,13 @@ header h1 {
   letter-spacing: 0.05em;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding: 0.8rem 0;
+
+  animation: slide 2s ease;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+}
+header h1:hover {
+  transform: scale(1.1);
 }
 
 main {
@@ -83,6 +92,13 @@ main p {
 .card {
   animation: cardTop 1s;
   position: relative;
+  border: 1px solid red;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+  filter: brightness(0.7);
 }
 
 .card img {
@@ -119,7 +135,22 @@ footer {
 }
 
 /* ================== KEYFRAMES =================================== */
-
+@keyframes pisca {
+  70% {
+    box-shadow: 0 0 0 25px rgb(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(0, 0, 0, 0);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes cardTop {
   from {
     opacity: 0;
