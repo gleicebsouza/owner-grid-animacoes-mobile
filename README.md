@@ -11,7 +11,7 @@ Desafio do curso explorer,que desenvolvi a versão mobile e desktop e foram apli
 
 ## 💻 Deploy: 
 [https://grid-animacoes-mobile-sdvn.vercel.app/](https://grid-animacoes-mobile-91h3flmt1-gleicebsouza.vercel.app/)
-(https://gleicebsouza.github.io/grid-animacoes-mobile/ )
+[https://gleicebsouza.github.io/grid-animacoes-mobile/](https://gleicebsouza.github.io/grid-animacoes-mobile/)
 
 ## 🔖 Layout
 ![image](https://user-images.githubusercontent.com/61830297/196005434-79d0c480-db61-4d8d-8d47-372220729b4d.png)
